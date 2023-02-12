@@ -54,7 +54,7 @@ print("Register_Find_Element")
 Name_button = "name"
 #Email_button_loc = "//button[data-qa()='signup-email']"
 Action_Name = driver.find_element(By.NAME, Name_button).send_keys("Faizul")
-Action_Email = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-email']").send_keys("zagalfayeezullah@gmail.com")
+Action_Email = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-email']").send_keys("zagalssfayeezullah@gmail.com")
 #Signup_button = ".btn.btn-default"
 Action_SignUP = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-button']").click()
 #Action_SignUP.click()

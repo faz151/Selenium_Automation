@@ -10,25 +10,27 @@ driver = webdriver.Chrome(r'H:\New folder\chromedriver.exe')
 
 #Task_2
 driver.get("http://automationexercise.com")
+driver.implicitly_wait(10)
 
 #Task_4
 Add_To_Cart_CSS_Selector = ".btn.btn-default.add-to-cart"
 Action_Add_To_Cart = driver.find_element(By.CSS_SELECTOR, Add_To_Cart_CSS_Selector)
 
 Action_Add_To_Cart.click()
-print(Action_Add_To_Cart)
+#print(Action_Add_To_Cart)
 
 #Task_5
 
 Close_Continue_Shopping =".btn.btn-success.close-modal.btn-block"
 Action_Close_Continue_Shopping=driver.find_element(By.CSS_SELECTOR, Close_Continue_Shopping)
 Action_Close_Continue_Shopping.click()
-print(Action_Close_Continue_Shopping)
+
+#print(Action_Close_Continue_Shopping)
 
 Click_Cart =".fa.fa-shopping-cart"
 Action_Click_Cart = driver.find_element(By.CSS_SELECTOR, Click_Cart)
 Action_Click_Cart.click()
-print(Action_Click_Cart)
+#print(Action_Click_Cart)
 
 #Task_6
 Shopping_Cart_Button = "//li[text()='Shopping Cart']"
@@ -54,7 +56,7 @@ print("Register_Find_Element")
 Name_button = "name"
 #Email_button_loc = "//button[data-qa()='signup-email']"
 Action_Name = driver.find_element(By.NAME, Name_button).send_keys("Faizul")
-Action_Email = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-email']").send_keys("zagalssfayeezullah@gmail.com")
+Action_Email = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-email']").send_keys("sayeezullah@gmail.com")
 #Signup_button = ".btn.btn-default"
 Action_SignUP = driver.find_element(By.CSS_SELECTOR,"[data-qa='signup-button']").click()
 #Action_SignUP.click()
